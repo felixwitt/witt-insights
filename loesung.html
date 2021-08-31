@@ -1,1 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<button onclick="increment()" class="increment">Erhöhen</button>
+<button onclick="decrement()" class="decrement">Reduzieren</button>
+  <p id="text">0</p>
+</body>
+</html>
 
+<style>
+    .increment {
+        width: 150px;
+        background-color: red;
+    }
+
+    .decrement {
+        height: 150px;
+        border: none;
+    }
+</style>
+
+<script>
+  var count = 0;
+  function increment() {
+    count++;
+    document.getElementById("text").innerHTML = count;
+  }
+  
+  function decrement() {
+    count--;
+    document.getElementById("text").innerHTML = count;
+  }
+</script>
